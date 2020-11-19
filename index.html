@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manas Hejmadi</title>
+
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/desktop.css" />
+    <link rel="stylesheet" href="CSS/mobile.css" />
+    <link rel="stylesheet" href="CSS/tablet.css" />
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <!-- <div class="backtotop">
+      <img src="Images/up.png" alt="" />
+    </div> -->
+    <nav>
+      <img src="Images/brain.png" alt="" id="logoimg" />
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="#" onclick="goto('Home');">Home</a></li>
+        <li><a href="#" onclick="goto('About');">About</a></li>
+        <li><a href="#" onclick="goto('Skills');">Skills</a></li>
+        <li><a href="#" onclick="goto('Projects');">Projects</a></li>
+        <li><a href="#" onclick="goto('More');">More</a></li>
+        <li><a href="#" onclick="goto('Contact');">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!--THis is the Home Section of thee WebPage-->
+      <section class="Home">
+        <div class="image">
+          <center><img src="Images/pp.png" class="pp" /></center>
+        </div>
+        <div class="homespace">
+          <div class="signature"></div>
+          <h1 class="hello">Hey! 👋 I’m Manas Hejmadi</h1>
+          <h4 class="subtitle">I Translate Ideas into Code.</h4>
+          <div class="cta">
+            <div class="outlinebtn" onclick="workWithMe();">WORK WITH ME</div>
+            <div class="outlinebtn" onclick="goto('Projects');">PROJECTS</div>
+          </div>
+          <div class="contactbar">
+            <img
+              src="Images/instagram.png"
+              alt=""
+              class="minicontacticon"
+              onclick="handleContactClick('Instagram');"
+            />
+            <img
+              src="Images/linkedin.png"
+              alt=""
+              class="minicontacticon"
+              onclick="handleContactClick('LinkedIn');"
+            />
+            <img
+              src="Images/github.png"
+              alt=""
+              class="minicontacticon"
+              onclick="handleContactClick('Github');"
+            />
+            <img
+              src="Images/gmail.png"
+              alt=""
+              class="minicontacticon"
+              onclick="handleContactClick('Gmail');"
+            />
+            <h4 class="loc">Bengaluru, India</h4>
+          </div>
+        </div>
+      </section>
+      <br />
+      <div class="content">
+        <!--This is the About Me Section of the Webpage-->
+        <h1 class="heading">👋 Let me Introduce Myself</h1>
+        <br />
+        <p class="aboutme">
+          Hey! I'm Manas Hejmadi, a 17 year old Student, Developer and Startup
+          Aspirant from Bengaluru, India. I have been consistently coding for
+          several years now and have a brief understanding of multiple languages
+          and paradigms related to programming. I'm a jack of all trades and I
+          code in Flutter, Python, Java, JavaScript and more! I have had a
+          little experience in multiple fields such as Machine Learning, Core
+          Programming, Webdev, Mobile Development, Desktop Development and more!
+          I Specialize in App making and have made numerous apps over the years!
+          I also have the skill to formulate good ideas and translate it to
+          Functional Code! I’m mostly a solo developer but I can also work and
+          coordinate tasks extemely well when i’m in a Team! Hit me up! Lets
+          talk soon!
+        </p>
+
+        <!--This is the Skills Section of the Webpage-->
+        <h1 class="heading">🤙 Languages & Frameworks</h1>
+        <br />
+
+        <div class="sidescroll">
+          <div class="lang">
+            <center>
+              <img src="Images/flutter.png" alt="" class="xb" /><br />
+              <small class="lname">Flutter</small>
+            </center>
+          </div>
+          <div class="lang">
+            <center>
+              <img src="Images/python.png" alt="" class="xb" /><br />
+              <small class="lname">Python 3</small>
+            </center>
+          </div>
+          <div class="lang">
+            <center>
+              <img src="Images/java.png" alt="" class="xb" /><br />
+              <small class="lname">Java</small>
+            </center>
+          </div>
+          <div class="lang">
+            <center>
+              <img src="Images/js.png" alt="" class="xb" /><br />
+              <small class="lname">JavaScript</small>
+            </center>
+          </div>
+          <div class="lang">
+            <center>
+              <img src="Images/svelte.png" alt="" class="xb" /><br />
+              <small class="lname">Svelte</small>
+            </center>
+          </div>
+          <div class="lang">
+            <center>
+              <img src="Images/python.png" alt="" class="xb" /><br />
+              <small class="lname">Flask</small>
+            </center>
+          </div>
+        </div>
+        <br />
+        <h1 class="heading">👀 Skills & Technologies</h1>
+        <br />
+
+        <div class="sidescroll">
+          <div class="skill">
+            <center>
+              <img src="Images/ae.png" alt="" class="xb" /><br />
+              <small class="lname">After Effects</small>
+            </center>
+          </div>
+          <div class="skill">
+            <center>
+              <img src="Images/ps.png" alt="" class="xb" /><br />
+              <small class="lname">PhotoShop</small>
+            </center>
+          </div>
+          <div class="skill">
+            <center>
+              <img src="Images/mentor.png" alt="" class="xb" /><br />
+              <small class="lname">Mentoring</small>
+            </center>
+          </div>
+          <div class="skill">
+            <center>
+              <img src="Images/Tw.png" alt="" class="xb" /><br />
+              <small class="lname">Teamwork</small>
+            </center>
+          </div>
+          <div class="skill">
+            <center>
+              <img src="Images/brain.png" alt="" class="xb" /><br />
+              <small class="lname">Creativity</small>
+            </center>
+          </div>
+          <div class="skill">
+            <center>
+              <img src="Images/medium.png" alt="" class="xb" /><br />
+              <small class="lname">Blogging</small>
+            </center>
+          </div>
+		</div>
+		
+		<!--This is the Projects Section of the Webpage-->
+
+		<div class="largeprojects">
+			<h1 class="heading">🔥 Large Projects</h1>
+			<br />
+			<div class="projectviewer">
+				<div class="project">
+					<div class="image"><center><img src="Images/flutter.png" alt="" srcset=""></center></div>
+					<div class="projectdetails">
+						<label class="projectitle">FlutterGym</label><small class="yr">(stable)</small><br><br>
+						<label class="yr">2020</label><br>
+						<label class="stack">Flutter + Flask(Python)</label>
+						<br><br><br>
+						<p class="desc">A Complete Online Gym and Training Platform coupled with a 
+							inbuilt Store for Apparel, Suppliments, Equipments and support for meditation,
+							articles, and so much more
+						</p>
+					</div>
+				</div>
+				<div class="project">
+					<div class="image"><center><img src="Images/flutter.png" alt="" srcset=""></center></div>
+					<div class="projectdetails">
+						<label class="projectitle">MicroBlogger</label><small class="yr">(alpha)</small><br><br>
+						<label class="yr">2020</label><br>
+						<label class="stack">Flutter + Flask(Python)</label>
+						<br><br><br>
+						<p class="desc">An Indian Flutter Based Microblogging
+							platfom similar to Twitter that 
+							provides a new way to socialize with
+							your peers!</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<br><br>
+		<div class="personalprojects">
+			<h1 class="heading">🔥 Personal Projects</h1>
+			<br />
+			<div class="projectviewer">
+				
+			</div>
+		</div>
+
+
+		<!--This is the Other Works Section of the Webpage-->
+
+		<div class="largeprojects">
+			<h1 class="heading">👀 Other Works</h1>
+			<br />
+			<div class="projectviewer">
+
+			</div>
+		</div>
+
+
+
+
+      </div>
+
+      <!-- <section class="Skills">
+		
+	  </section>
+      <section class="Projects"></section>
+      <section class="More"></section>
+      <section class="Contact"></section> -->
+
+      <footer></footer>
+    </main>
+  </body>
+</html>

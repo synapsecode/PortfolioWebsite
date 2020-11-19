@@ -1,0 +1,101 @@
+html {
+  height: 100%;
+  /* overflow-x: hidden; */
+  
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+main{
+	padding: 20px;
+	overflow-x: hidden;
+	height: 100%;
+}
+
+.spacer{
+  height: 20px;
+}
+
+.outlinebtn{
+  padding: 10px 20px;
+  border: 1px solid gray;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.outlinebtn:hover{
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.minicontacticon{
+  height: 40px;
+  width: 40px;
+}
+
+.minicontacticon:hover{
+  border: 1px dotted goldenrod;
+}
+
+.backtotop{
+  border-radius: 50%;
+  background-color: black;
+  border: 1px solid gray;
+  height: 60px;
+
+  width: 60px;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px
+}
+
+.backtotop:hover{
+  background-color: rgba(0, 0, 0, 0.692);
+}
+
+
+.backtotop img{
+  height: 45px;
+  margin-top: 6px;
+  margin-left: 6px;
+  width: 45px;
+}
+
+#logoimg{
+  height: 48px;
+  width: 48px;
+}
+
+footer{
+	height: 70%;
+	margin-left: -100px;
+	margin-top: 10px;
+	width: 200%;
+	background-color: black;
+}
+
+
+
+
+
+

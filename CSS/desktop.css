@@ -1,0 +1,223 @@
+section{
+	margin-top: 10px;
+	/* border: 1px solid silver; */
+		height: 95%;
+	
+}
+
+nav {
+  display: flex;
+  height: 65px;
+  width: 100%;
+  background: #f6f6f6;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 50px;
+  flex-wrap: wrap;
+  color: rgba(0, 0, 0, 0.822);
+}
+nav .logo {
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 5px;
+}
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  color: white;
+  background: black;
+}
+nav .menu-btn i {
+  color: rgb(102, 102, 102);
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+/* ================================HOME=============================================*/
+.pp{
+	height: 420px;
+	width: 420px;
+	margin: auto 20px;
+
+	border-radius: 50%;
+	border: 1px solid black;
+}
+
+.signature{
+	display: none;
+	height: 60px;
+	width: 100px;
+	background-color: rgb(211, 211, 211);
+}
+
+.image{
+	flex: 2;
+	/* background-color: rgb(196, 185, 185); */
+	/* border: 1px solid gray; */
+	
+}
+
+.homespace{
+	flex: 2;
+	
+	padding: 20px 20px 20px 0px;
+	/* border: 1px solid gray; */
+	/* background-color: rgb(219, 215, 215); */
+}
+
+.Home{
+	margin-top: 0px;
+	display: flex;
+	align-items: center;
+  	justify-content: center;
+}
+
+.loc{
+	color: rgb(150, 148, 148);
+	font-weight: lighter;
+	margin-left: 200px;
+	margin-top: -32px;
+}
+
+.cta{
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.hello{
+	font-size: 4.8rem;
+	font-weight: bolder;
+	line-height: 80px;
+	margin-bottom: 10px;
+	
+}
+
+.subtitle{
+	font-size: 1.6rem;
+	font-weight: lighter;
+	margin-bottom: 10px;
+	color: rgb(102, 102, 102);
+}
+
+/* ===================================ABOUT ME =================================== */
+
+
+.content{
+	padding: 25px;
+	margin-top: 20px;
+}
+
+.heading{
+	font-size: 3.2rem;
+	margin-bottom: 10px;
+	color: #2D2D2D;
+}
+
+.aboutme{
+	color: #757474;
+	font-size: 2.23rem;
+	margin-bottom: 40px;
+}
+
+
+
+
+.Skills{
+	padding: 25px;
+}
+
+.sidescroll{
+	border: 1px dashed rgba(0, 0, 0, 0.493);
+	height: 150px;
+	overflow-y: hidden;
+	display: flex;
+	overflow-x: scroll;
+	padding: 12px 20px;
+}
+
+
+.lang, .skill{
+	height: 100px;
+	width: 100px;
+	margin: 0px 10px;
+	padding-top: 3px;
+}
+
+
+
+.xb{
+	height: 75px;
+	width: 75px;
+}
+
+.lname{
+	font-size: 1.1rem;
+}
+
+
+.largeprojects{
+	margin-top: 40px;
+}
+
+.projectviewer{
+	height: 300px;
+	width: 100%;
+	overflow-x: scroll;
+	border: 1px solid gray;
+	padding: 10px;
+	display: flex;
+
+}
+
+
+.project{
+	height: 100%;
+	width: 500px;
+	background-color: rgb(17, 17, 17);
+	color: white;
+	border: 1px solid black;
+	display: flex;
+	margin: 0px 10px;
+}
+
+.project img{
+
+	margin: 80px 20px;
+}
+
+
+.projectdetails{
+	padding: 20px;
+	/* overflow-y: auto; */
+	flex: 3
+}
+
+.projectitle{
+	font-size: 2.3rem;
+
+	margin-bottom: 10px 
+}
+
+.desc, .yr, .stack{
+	color: rgba(255, 255, 255, 0.541);
+}

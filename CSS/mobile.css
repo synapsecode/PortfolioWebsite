@@ -1,0 +1,104 @@
+@media (max-width: 920px) {
+  nav .menu-btn i {
+    display: block;
+  }
+  /* #click:checked ~ .menu-btn i:before {
+	  content: "\f00d";
+	} */
+  nav ul {
+    position: fixed;
+    top: 65px;
+    left: -100%;
+    background: rgba(255, 255, 255, 0.925);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul {
+    left: 0;
+  }
+  nav ul li {
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a {
+    width: 100%;
+    margin-left: -100%;
+    color: black;
+    display: block;
+    font-size: 20px;
+    transition: 0.4s cubic-bezier(0.68, -0.55, 1.265, 1.55);
+  }
+  #click:checked ~ ul li a {
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover {
+    background: none;
+    color: rgb(190, 4, 82);
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .pp {
+    height: 220px;
+    width: 220px;
+    margin-top: 10px;
+  }
+
+  .image {
+	margin-left: 0px;
+	margin-bottom: 10px;
+  }
+
+  section{
+	margin-top: 10px;
+	/* border: 1px solid silver; */
+		height: 90%;
+	
+}
+
+
+  .Home {
+	display: block;
+	border: non;
+	padding-top: 50px;
+  }
+
+  .homespace {
+    flex: 2;
+	
+    padding: 0;
+    /* border: 1px solid gray; */
+    /* background-color: rgb(219, 215, 215); */
+    text-align: center;
+  }
+
+  .hello{
+	font-size: 2.2rem;
+	line-height: 40px;
+	margin-bottom: 10px;
+  }
+  .loc {
+    display: block;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+
+  .aboutme{
+	  font-size: 1.3rem;
+  }
+  .cta{
+	  width: 320px;
+	  margin: auto;
+	  margin-bottom: 20px;
+  }
+
+  .heading{
+	font-size: 2.3rem;
+  }
+}
