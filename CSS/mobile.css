@@ -2,9 +2,9 @@
   nav .menu-btn i {
     display: block;
   }
-  /* #click:checked ~ .menu-btn i:before {
+  #click:checked ~ .menu-btn i:before {
 	  content: "\f00d";
-	} */
+	}
   nav ul {
     position: fixed;
     top: 65px;
@@ -101,4 +101,8 @@
   .heading{
 	font-size: 2.3rem;
   }
+
+
+
+  
 }

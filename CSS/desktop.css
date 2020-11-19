@@ -41,6 +41,7 @@ nav ul li a {
 nav ul li a.active,
 nav ul li a:hover {
   color: white;
+  cursor: pointer;
   background: black;
 }
 nav .menu-btn i {
@@ -50,7 +51,7 @@ nav .menu-btn i {
   display: none;
 }
 input[type="checkbox"] {
-  display: none;
+  visibility: hidden;
 }
 
 /* ================================HOME=============================================*/
@@ -197,12 +198,16 @@ input[type="checkbox"] {
 	border: 1px solid black;
 	display: flex;
 	margin: 0px 10px;
+	cursor: pointer;
 }
 
 .project img{
 	margin: 80px 20px;
 }
 
+.project:hover{
+	background-color: crimson;
+}
 
 .projectdetails{
 	padding: 20px;
@@ -245,3 +250,4 @@ input[type="checkbox"] {
 	margin-top: 10px;
 	color: rgb(92, 90, 90);
 }
+

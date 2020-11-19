@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="CSS/desktop.css" />
     <link rel="stylesheet" href="CSS/mobile.css" />
     <link rel="stylesheet" href="CSS/tablet.css" />
-    <script src="app.js"></script>
+   
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
@@ -23,16 +23,17 @@
         <i class="fas fa-bars"></i>
       </label>
       <ul>
-        <li><a href="#" onclick="goto('Home');">Home</a></li>
-        <li><a href="#" onclick="goto('About');">About</a></li>
-        <li><a href="#" onclick="goto('Skills');">Skills</a></li>
-        <li><a href="#" onclick="goto('Projects');">Projects</a></li>
-        <li><a href="#" onclick="goto('More');">More</a></li>
-        <li><a href="#" onclick="goto('Contact');">Contact</a></li>
+        <li><a onclick="goto('Home');">Home</a></li>
+        <li><a onclick="goto('About');">About</a></li>
+        <li><a  onclick="goto('Skills');">Skills</a></li>
+        <li><a  onclick="goto('Projects');">Projects</a></li>
+        <li><a onclick="goto('More');">More</a></li>
+        <li><a onclick="goto('Contact');">Contact</a></li>
       </ul>
     </nav>
     <main>
-      <!--THis is the Home Section of thee WebPage-->
+	  <!--THis is the Home Section of thee WebPage-->
+	  <span id="Home"></span>
       <section class="Home">
         <div class="image">
           <center><img src="Images/pp.png" class="pp" /></center>
@@ -77,7 +78,8 @@
       <br />
       <div class="content">
 		<!--This is the About Me Section of the Webpage-->
-		<div class="About"></div>
+
+		<span id="About"></span>
         <h1 class="heading">👋 Let me Introduce Myself</h1>
         <br />
         <p class="aboutme">
@@ -97,8 +99,8 @@
 		
 
 		<!--This is the Skills Section of the Webpage-->
-		<div class="Skills"></div>
-        <h1 class="heading">🤙 Languages & Frameworks</h1>
+		<span id="Skills"></span>
+        <h1 class="heading">🤙 Languages & Frameworks <span class="sw">(swipe)</span></h1>
         <br />
 
         <div class="sidescroll">
@@ -140,7 +142,7 @@
           </div>
         </div>
         <br />
-        <h1 class="heading">👀 Skills & Technologies</h1>
+        <h1 class="heading">👀 Skills & Technologies <span class="sw">(swipe)</span></h1>
         <br />
 
         <div class="sidescroll">
@@ -183,12 +185,12 @@
 		</div>
 		
 		<!--This is the Projects Section of the Webpage-->
-		<div class="Projects"></div>
+		<span id="Projects"></span>
 		<div class="largeprojects">
 			<h1 class="heading">🔥 Large Projects</h1>
 			<br />
 			<div class="projectviewer">
-				<div class="project">
+				<div class="project" onclick="gotoproject('FlutterGym');">
 					<div class="ximage"><center><img src="Images/flutter.png" alt="" srcset=""></center></div>
 					<div class="projectdetails">
 						<label class="projectitle">FlutterGym</label><small class="yr"> (stable)</small><br><br>
@@ -201,7 +203,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="project">
+				<div class="project" onclick="gotoproject('Microblogger');">
 					<div class="ximage"><center><img src="Images/flutter.png" alt="" srcset=""></center></div>
 					<div class="projectdetails">
 						<label class="projectitle">MicroBlogger</label><small class="yr"> (alpha)</small><br><br>
@@ -215,7 +217,7 @@
 					</div>
 				</div>
 				
-				<div class="project">
+				<div class="project" onclick="gotoproject('VoteFlow');">
 					<div class="ximage"><center><img src="Images/python.png" alt="" srcset=""></center></div>
 					<div class="projectdetails">
 						<label class="projectitle">VoteFlow</label><small class="yr"> (stable)</small><br><br>
@@ -226,7 +228,7 @@
 							Communities and Small Businesses with a really simple and easy to use UI all built using Flask!</p>
 					</div>
 				</div>
-				<div class="project">
+				<div class="project" onclick="gotoproject('SchoolCompanion');">
 					<div class="ximage"><center><img src="Images/flutter.png" alt="" srcset=""></center></div>
 					<div class="projectdetails">
 						<label class="projectitle">SchoolCompanion</label><br><br>
@@ -236,7 +238,7 @@
 						<p class="desc">A Complete Platform for Schools, Colleges, Universities that allows them to provide notes, attendance info, results, Sample Papers, Circulars and more!</p>
 					</div>
 				</div>
-				<div class="project">
+				<div class="project" onclick="gotoproject('Metalloid');">
 					<div class="ximage"><center><img src="Images/flutter.png" alt="" srcset=""></center></div>
 					<div class="projectdetails">
 						<label class="projectitle">Metalloid</label><small class="yr"> (UI)</small><br><br>
@@ -250,12 +252,12 @@
 			</div>
 		</div>
 		<br><br>
-		<div class="personalprojects">
+		<div class="personalprojects" >
 			<h1 class="heading">🔥 Personal Projects</h1>
 			<br />
 			<div class="projectviewer">
-				<div class="project">
-					<div class="ximage"><center><img src="Images/python.png" alt="" srcset=""></center></div>
+				<div class="project" onclick="gotoproject('FaceSwapApp');">
+					<div class="ximage"><center><img src="Images/ml.png" alt="" srcset=""></center></div>
 					<div class="projectdetails">
 						<label class="projectitle">FaceSwap App</label><br><br>
 						<label class="yr">2019-2020</label><br>
@@ -264,7 +266,7 @@
 						<p class="desc">An Application that allows you to Swap your face with another face over the web! It uses Python to conduct a bit of ML Magic and then uses Flask to host itself.</p>
 					</div>
 				</div>
-				<div class="project">
+				<div class="project" onclick="gotoproject('TasksApp');">
 					<div class="ximage"><center><img src="Images/js.png" alt="" srcset=""></center></div>
 					<div class="projectdetails">
 						<label class="projectitle">Tasks App</label><br><br>
@@ -274,7 +276,7 @@
 						<p class="desc">A JavaScript WebApp that provides Google Tasks esque functionality with a beautiful and feature-rich User Interface</p>
 					</div>
 				</div>
-				<div class="project">
+				<div class="project" onclick="gotoproject('TextDifferenceFinder');">
 					<div class="ximage"><center><img src="Images/js.png" alt="" srcset=""></center></div>
 					<div class="projectdetails">
 						<label class="projectitle">Text Difference Finder</label><br><br>
@@ -284,7 +286,7 @@
 						<p class="desc">Finds the Differences betweenn 2 blocks of text and highlights them beautifully!</p>
 					</div>
 				</div>
-				<div class="project">
+				<div class="project" onclick="gotoproject('JSYoutubeDownloader');">
 					<div class="ximage"><center><img src="Images/js.png" alt="" srcset=""></center></div>
 					<div class="projectdetails">
 						<label class="projectitle">JS Youtube Downloader</label><br><br>
@@ -299,17 +301,29 @@
 
 
 		<!--This is the Other Works Section of the Webpage-->
-		<!-- <div class="More">
+		<br><br>
+		<span id="More"></span>
+		<div class="More">
 			<h1 class="heading">👀 Other Works</h1>
 			<br />
 			<div class="projectviewer">
-
+				<div class="project" onclick="gotoproject('MLBlog');">
+					<div class="ximage"><center><img src="Images/ml.png" alt="" srcset=""></center></div>
+					<div class="projectdetails">
+						<label class="projectitle">Machine Learning Blog</label><br><br>
+						<label class="yr">2018</label><br>
+						<label class="stack">Wordpress Blog</label>
+						<br><br><br>
+						<p class="desc">This is a Blog Post series about Basic Machine Learning! Check it out!</p>
+					</div>
+				</div>
 			</div>
-		</div> -->
+		</div>
 
 
 		<!--This is the Other Works Section of the Webpage-->
 		<br><br>
+		<span id="Contact"></span>
 		<div class="Contacts">
 			<h1 class="heading">🤙 Contact Me</h1>
 			<br />
@@ -354,21 +368,18 @@
 		</div>
       </div>
 
-      <!-- <section class="Skills">
-		
-	  </section>
-      <section class="Projects"></section>
-      <section class="More"></section>
-      <section class="Contact"></section> -->
 
+
+	  
       <footer>
 		  <div class="fcon">
-			<p class="footerhead">Synapse.</p><br>
+			<p class="footerhead">Synapse.</p>
 			<p class="mad">Made with ❤️ by Manas</p>
 			<p class="cpy">(c) Manas Hejmadi 2020</p>
 		  </div>
 		 
 	  </footer>
-    </main>
+	</main>
+	<script src="app.js"></script>
   </body>
 </html>
