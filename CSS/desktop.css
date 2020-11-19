@@ -181,12 +181,11 @@ input[type="checkbox"] {
 
 .projectviewer{
 	height: 300px;
-	width: 100%;
 	overflow-x: scroll;
 	border: 1px solid gray;
 	padding: 10px;
 	display: flex;
-
+	overflow-y: hidden;
 }
 
 
@@ -201,15 +200,13 @@ input[type="checkbox"] {
 }
 
 .project img{
-
 	margin: 80px 20px;
 }
 
 
 .projectdetails{
 	padding: 20px;
-	/* overflow-y: auto; */
-	flex: 3
+	width: 400px;
 }
 
 .projectitle{
@@ -220,4 +217,31 @@ input[type="checkbox"] {
 
 .desc, .yr, .stack{
 	color: rgba(255, 255, 255, 0.541);
+}
+
+.contactIcon{
+	height: 85px;
+	width: 85px;
+}
+
+
+.footerhead{
+	font-size: 8rem;
+	color: white;
+	
+}
+
+.fcon{
+	margin-left: 100px;
+	padding: 10px;
+}
+
+.mad{
+	font-size: 2rem;
+	color: rgb(156, 156, 156);
+}
+
+.cpy{
+	margin-top: 10px;
+	color: rgb(92, 90, 90);
 }
