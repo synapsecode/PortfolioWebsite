@@ -1,5 +1,7 @@
 let checked = false;
 
+//! UNPREDICTABLE BUG - Sometimes Navbar disappears
+
 //Handles the Redirecting to Contact sources
 const handleContactClick = (name) => {
 	console.log("Redirecting to: " + name);
@@ -20,8 +22,7 @@ const goto = (name) => {
 	}
 	checked = false;
 	window.location.href = "#"+name;
-
-	
+	shiftWindow();
 }
 
 
@@ -32,10 +33,11 @@ const gotoproject = (name) => {
 
 //Prevents Navbar from Disappearing on InPage Redirect
 var shiftWindow = function() { scrollBy(0, -70) };
-if (location.hash) shiftWindow();
-window.addEventListener("hashchange", shiftWindow);
+// if (location.hash) shiftWindow();
+// window.addEventListener("hashchange", shiftWindow);
 
 
 document.getElementById("click").addEventListener("change", function(x){
 	checked = !checked;
+	
 })
