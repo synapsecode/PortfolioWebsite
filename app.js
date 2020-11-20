@@ -8,6 +8,27 @@ let social = {
 	"Facebook": "https://www.facebook.com/synapse.code",
 	"Twitter": "https://twitter.com/synapse_code",
 }
+
+let projects = {
+	"FlutterGym":"https://github.com/synapsecode/FlutterGym",
+	"Microblogger": "https://github.com/synapsecode/Microblogger",
+	"VoteFlow": "https://github.com/synapsecode/VoteFlow",
+	"SchoolCompanion": "https://github.com/synapsecode/SchoolCompanion-App",
+	"Metalloid": "https://github.com/synapsecode/Metalloid",
+}
+
+let personal_projects = {
+	"FaceSwapApp": "https://github.com/synapsecode/Flask-FaceSwapWebApp",
+	"TasksApp": "https://github.com/synapsecode/JavaScript-TasksApp",
+	"TextDifferenceFinder": "https://github.com/synapsecode/JavaScript-MiniProjects",
+	"JSYoutubeDownloader": "https://github.com/synapsecode/JS-YoutubeDownloader",
+	"URLShortener": "https://github.com/synapsecode/Flask-URLShortener",
+}
+
+let other_works = {
+	"MLBlog": "https://ethereumcs.wordpress.com/",
+}
+
 //! UNPREDICTABLE BUG - Sometimes Navbar disappears
 
 //Handles the Redirecting to Contact sources
@@ -32,9 +53,16 @@ const goto = (name) => {
 	shiftWindow();
 }
 
+const gotoProject = (name) => {
+	window.open(projects[name], '_blank').focus();
+}
 
-const gotoproject = (name) => {
-	alert("Going to " + name);
+const gotoWorks = (name) => {
+	window.open(other_works[name], '_blank').focus();
+}
+
+const gotoPersonalProject = (name) => {
+	window.open(personal_projects[name], '_blank').focus();
 }
 
 
