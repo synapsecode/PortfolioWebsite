@@ -104,5 +104,91 @@
 
 
 
+  .projectviewer{
+    margin-top: 20px;
+    height: 420px;
+    overflow-x: scroll;
+    border: 1px solid gray;
+    display: flex;
+    overflow-y: hidden;
+  }
+
+  .project{
+    background-color: rgb(17, 17, 17);
+    color: white;
+    border: 1px solid black;
+    margin: 0px 5px;
+    cursor: pointer;
+    display: block;
+    width: 300px;
+   
+  }
+
   
+.project img{
+  margin: 20px 0 10px 0;
+}
+
+.project:hover{
+	background-color: crimson;
+}
+
+.projectdetails{
+  padding: 20px;
+  width: 300px;
+}
+
+.projectitle{
+  font-size: 2rem;
+	margin-bottom: 10px 
+}
+
+.desc, .yr, .stack{
+  color: rgba(255, 255, 255, 0.541);
+  overflow-wrap: break-word;
+}
+
+.footerhead{
+	font-size: 3.7rem;
+	color: white;
+	
+}
+
+.fcon{
+	margin-left: 100px;
+	padding: 10px;
+}
+
+.mad{
+	font-size: 1.3rem;
+	color: rgb(156, 156, 156);
+}
+
+.cpy{
+	margin-top: 10px;
+	color: rgb(92, 90, 90);
+}
+
+footer{
+	height:250px;
+
+}
+
+
+.contactbar{
+  width: 190px;
+  margin: auto;
+}
+
+.spcr{
+  width: 100px;
+}
+.ltr{
+	margin-left: 0;
+  }
+  
+  .rtr{
+	margin-right: 10px;
+  }
+
 }

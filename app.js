@@ -1,16 +1,23 @@
 let checked = false;
 
+let social = {
+	"Instagram": "https://www.instagram.com/synapse.code/",
+	"LinkedIn": "https://www.linkedin.com/in/manas-hejmadi-0b3920183/",
+	"Github": "https://github.com/synapsecode",
+	"Gmail": "https://mail.google.com/mail/?view=cm&fs=1&to=manashejmadi@gmail.com",
+	"Facebook": "https://www.facebook.com/synapse.code",
+	"Twitter": "https://twitter.com/synapse_code",
+}
 //! UNPREDICTABLE BUG - Sometimes Navbar disappears
 
 //Handles the Redirecting to Contact sources
 const handleContactClick = (name) => {
-	console.log("Redirecting to: " + name);
+	window.open(social[name], '_blank').focus();
 }
 
 //Handles the Work With Me Button
 const workWithMe = () => {
-	console.log("Redirecting to Work With Me!");
-	alert("Coming Soon.....");
+	window.open(social["Gmail"], '_blank').focus();
 }
 
 //Scrolls to different sections in the WebPage

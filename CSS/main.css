@@ -107,4 +107,6 @@ footer{
   font-size: 1rem;
   color: rgb(126, 126, 126);
   font-weight: lighter;
+  display: inline;
 }
+
