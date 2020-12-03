@@ -110,3 +110,10 @@ footer{
   display: inline;
 }
 
+.gm{
+  margin-top: -10px;
+  margin-left: 80px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: lighter;
+}
