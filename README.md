@@ -17,3 +17,4 @@
   1. Integrate a way to connect to github and directly show all my projects
   2. Add a feature to view my resume
   3. Add a Chatbot
+  4. Deeplinking for Apps & Especially GMAIL
