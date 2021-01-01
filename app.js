@@ -1,39 +1,91 @@
 let checked = false;
 
-let social = {
-	"Instagram": "https://www.instagram.com/synapse.code/",
-	"LinkedIn": "https://www.linkedin.com/in/manas-hejmadi-0b3920183/",
-	"Github": "https://github.com/synapsecode",
-	"Gmail": "https://mail.google.com/mail/?view=cm&fs=1&to=manashejmadi@gmail.com",
-	"Facebook": "https://www.facebook.com/synapse.code",
-	"Twitter": "https://twitter.com/synapse_code",
+let bio = document.getElementById("bio");
+let cBar = document.getElementById("cBar")
+let cBar2 = document.getElementById("cBar2");
+
+let projViewer = document.getElementById("projectviewer");
+let perProjViewer = document.getElementById("perprojviewer");
+let otherViewer = document.getElementById("otherworksviewer");
+
+let langscr = document.getElementById("lngf");
+let skillscr = document.getElementById("sk");
+
+
+const generateProject = (p) => {
+	return `
+	<div class="project ltr" onclick="gotoProject('${p.Name}');">
+		<div class="ximage"><center><img src="${p.imageSrc}" alt="" srcset=""></center></div>
+		<div class="projectdetails">
+			<label class="projectitle">${p.Name}</label><small class="yr"> </small><br><br>
+			<label class="yr">${p.year}</label><br>
+			<label class="stack">${p.TechStack}</label>
+			<br><br><br>
+			<p class="desc">
+				${p.description}
+			</p>
+		</div>
+	</div>
+	`
 }
 
-let projects = {
-	"FlutterGym":"https://github.com/synapsecode/FlutterGym",
-	"Microblogger": "https://github.com/synapsecode/Microblogger",
-	"VoteFlow": "https://github.com/synapsecode/VoteFlow",
-	"SchoolCompanion": "https://github.com/synapsecode/SchoolCompanion-App",
-	"Metalloid": "https://github.com/synapsecode/Metalloid",
+const generateContactIcon = (i, isMini=true) => {
+	return `
+	<img
+		src="${i.imageSrc}"
+		alt=""
+		class="${!isMini ? 'contactIcon' : 'minicontacticon'}"
+		onclick="handleContactClick('${i.name}');"
+	/>`
 }
 
-let personal_projects = {
-	"FaceSwapApp": "https://github.com/synapsecode/Flask-FaceSwapWebApp",
-	"TasksApp": "https://github.com/synapsecode/JavaScript-TasksApp",
-	"TextDifferenceFinder": "https://github.com/synapsecode/JavaScript-MiniProjects",
-	"JSYoutubeDownloader": "https://github.com/synapsecode/JS-YoutubeDownloader",
-	"URLShortener": "https://github.com/synapsecode/Flask-URLShortener",
+const generateLangOrSkill = (e, isSkill=false) => {
+	return `
+	<div class=${isSkill ? 'skill' : 'lang'}>
+		<center>
+			<img src="${e.imageSrc}" alt="" class="xb" /><br />
+			<small class="lname">${e.name}</small>
+		</center>
+	</div>
+	`;
 }
 
-let other_works = {
-	"MLBlog": "https://ethereumcs.wordpress.com/",
+bio.innerHTML = aboutme
+social.forEach((e) => {
+	if(social.slice(0,social.length-2).includes(e))
+		cBar.innerHTML+=generateContactIcon(e)
+	cBar2.innerHTML+=generateContactIcon(e, isMini=false);
+})
+cBar.innerHTML += '<h4 class="loc">Bengaluru, India</h4>';
+//Main Projects
+PROJDATA.forEach((e)=>{
+	projViewer.innerHTML += generateProject(e);
+});
+PERPROJDATA.forEach((e)=>{
+	perProjViewer.innerHTML += generateProject(e);
+});
+OTHERDATA.forEach((e)=>{
+	otherViewer.innerHTML += generateProject(e);
+});
+
+lnf.forEach((e)=> langscr.innerHTML += generateLangOrSkill(e, isSkill=false))
+skillandtech.forEach((e)=> skillscr.innerHTML += generateLangOrSkill(e, isSkill=true))
+
+const getData = (src, key) => {
+	for(i of src){
+		if(i.Name === key){
+			return i
+		}
+	}
+	return undefined;
 }
+
 
 //! UNPREDICTABLE BUG - Sometimes Navbar disappears
 
 //Handles the Redirecting to Contact sources
 const handleContactClick = (name) => {
-	window.open(social[name], '_blank').focus();
+	window.open(social_links[name], '_blank').focus();
 }
 
 //Handles the Work With Me Button
@@ -54,15 +106,15 @@ const goto = (name) => {
 }
 
 const gotoProject = (name) => {
-	window.open(projects[name], '_blank').focus();
+	window.open(proj_links[name], '_blank').focus();
 }
 
 const gotoWorks = (name) => {
-	window.open(other_works[name], '_blank').focus();
+	window.open(other_works_links[name], '_blank').focus();
 }
 
 const gotoPersonalProject = (name) => {
-	window.open(personal_projects[name], '_blank').focus();
+	window.open(perproj_links[name], '_blank').focus();
 }
 
 
@@ -73,6 +125,5 @@ var shiftWindow = function() { scrollBy(0, -70) };
 
 
 document.getElementById("click").addEventListener("change", function(x){
-	checked = !checked;
-	
+	checked = !checked;	
 })

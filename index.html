@@ -46,33 +46,10 @@
             <div class="outlinebtn" onclick="workWithMe();">WORK WITH ME</div>
 			<div class="outlinebtn" onclick="goto('Projects');">PROJECTS</div>
           </div>
-          <div class="contactbar">
-            <img
-              src="Images/instagram.png"
-              alt=""
-              class="minicontacticon"
-              onclick="handleContactClick('Instagram');"
-            />
-            <img
-              src="Images/linkedin.png"
-              alt=""
-              class="minicontacticon"
-              onclick="handleContactClick('LinkedIn');"
-            />
-            <img
-              src="Images/github.png"
-              alt=""
-              class="minicontacticon"
-              onclick="handleContactClick('Github');"
-            />
-            <img
-              src="Images/gmail.png"
-              alt=""
-              class="minicontacticon"
-              onclick="handleContactClick('Gmail');"
-			/>
+          <div class="contactbar" id="cBar">
+            
 			
-            <h4 class="loc">Bengaluru, India</h4>
+           
           </div>
         </div>
       </section>
@@ -83,231 +60,37 @@
 		<span id="About"></span>
         <h1 class="heading">👋 Let me Introduce Myself</h1>
         <br />
-        <p class="aboutme">
-          Hey! I'm Manas Hejmadi, a 17 year old Student, Developer and Startup
-          Aspirant from Bengaluru, India. I have been consistently coding for
-          several years now and have a brief understanding of multiple languages
-          and paradigms related to programming. I'm a jack of all trades and I
-          code in Flutter, Python, Java, JavaScript and more! I have had a
-          little experience in multiple fields such as Machine Learning, Core
-          Programming, Webdev, Mobile Development, Desktop Development and more!
-          I Specialize in App making and have made numerous apps over the years!
-          I also have the skill to formulate good ideas and translate it to
-          Functional Code! I’m mostly a solo developer but I can also work and
-          coordinate tasks extemely well when i’m in a Team! Hit me up! Lets
-          talk soon!
-		</p>
+        <p class="aboutme" id="bio"></p>
 		
 
 		<!--This is the Skills Section of the Webpage-->
 		<span id="Skills"></span>
         <h1 class="heading">🤙 Languages & Frameworks <span class="sw">(swipe)</span></h1>
         <br />
-
-        <div class="sidescroll">
-          <div class="lang">
-            <center>
-              <img src="Images/flutter.png" alt="" class="xb" /><br />
-              <small class="lname">Flutter</small>
-            </center>
-          </div>
-          <div class="lang">
-            <center>
-              <img src="Images/python.png" alt="" class="xb" /><br />
-              <small class="lname">Python 3</small>
-            </center>
-          </div>
-          <div class="lang">
-            <center>
-              <img src="Images/java.png" alt="" class="xb" /><br />
-              <small class="lname">Java</small>
-            </center>
-          </div>
-          <div class="lang">
-            <center>
-              <img src="Images/js.png" alt="" class="xb" /><br />
-              <small class="lname">JavaScript</small>
-            </center>
-          </div>
-          <div class="lang">
-            <center>
-              <img src="Images/svelte.png" alt="" class="xb" /><br />
-              <small class="lname">Svelte</small>
-            </center>
-          </div>
-          <div class="lang">
-            <center>
-              <img src="Images/python.png" alt="" class="xb" /><br />
-              <small class="lname">Flask</small>
-            </center>
-          </div>
-        </div>
-		<br />
+		<div class="sidescroll" id="lngf"></div>
+		
+		<br/>
 		<br>
+		
         <h1 class="heading">👀 Skills & Technologies <span class="sw">(swipe)</span></h1>
         <br />
 		
-        <div class="sidescroll">
-          <div class="skill">
-            <center>
-              <img src="Images/ae.png" alt="" class="xb" /><br />
-              <small class="lname">After Effects</small>
-            </center>
-          </div>
-          <div class="skill">
-            <center>
-              <img src="Images/ps.png" alt="" class="xb" /><br />
-              <small class="lname">PhotoShop</small>
-            </center>
-          </div>
-          <div class="skill">
-            <center>
-              <img src="Images/mentor.png" alt="" class="xb" /><br />
-              <small class="lname">Mentoring</small>
-            </center>
-          </div>
-          <div class="skill">
-            <center>
-              <img src="Images/Tw.png" alt="" class="xb" /><br />
-              <small class="lname">Teamwork</small>
-            </center>
-          </div>
-          <div class="skill">
-            <center>
-              <img src="Images/brain.png" alt="" class="xb" /><br />
-              <small class="lname">Creativity</small>
-            </center>
-          </div>
-          <div class="skill">
-            <center>
-              <img src="Images/medium.png" alt="" class="xb" /><br />
-              <small class="lname">Blogging</small>
-            </center>
-          </div>
+        <div class="sidescroll" id="sk">
+         
 		</div>
 		
 		<!--This is the Projects Section of the Webpage-->
 		<span id="Projects"></span>
 		<div class="largeprojects">
 			<h1 class="heading">🔥 Large Projects <span class="sw">(swipe)</span</h1>
-			<div class="projectviewer">
-				<div class="project ltr" onclick="gotoProject('FlutterGym');">
-					<div class="ximage"><center><img src="Images/flutter.png" alt="" srcset=""></center></div>
-					<div class="projectdetails">
-						<label class="projectitle">FlutterGym</label><small class="yr"> (stable)</small><br><br>
-						<label class="yr">2020</label><br>
-						<label class="stack">Flutter + Flask(Python)</label>
-						<br><br><br>
-						<p class="desc">A Complete Online Gym and Training Platform coupled with a 
-							inbuilt Store for Apparel, Suppliments, Equipments and support for meditation,
-							articles, etc
-						</p>
-					</div>
-				</div>
-				<div class="project" onclick="gotoProject('Microblogger');">
-					<div class="ximage"><center><img src="Images/flutter.png" alt="" srcset=""></center></div>
-					<div class="projectdetails">
-						<label class="projectitle">MicroBlogger</label><small class="yr"> (alpha)</small><br><br>
-						<label class="yr">2020</label><br>
-						<label class="stack">Flutter + Flask(Python)</label>
-						<br><br><br>
-						<p class="desc">An Indian Flutter Based Microblogging
-							platfom similar to Twitter that 
-							provides a new way to socialize with
-							your peers!</p>
-					</div>
-				</div>
-				
-				<div class="project" onclick="gotoProject('VoteFlow');">
-					<div class="ximage"><center><img src="Images/python.png" alt="" srcset=""></center></div>
-					<div class="projectdetails">
-						<label class="projectitle">VoteFlow</label><small class="yr"> (stable)</small><br><br>
-						<label class="yr">2019</label><br>
-						<label class="stack">Flask(Python)</label>
-						<br><br><br>
-						<p class="desc">A Complete Voting Platform for Schools, Colleges, Universities. 
-							Communities and Small Businesses with a really simple and easy to use UI all built using Flask!</p>
-					</div>
-				</div>
-				<div class="project" onclick="gotoProject('SchoolCompanion');">
-					<div class="ximage"><center><img src="Images/flutter.png" alt="" srcset=""></center></div>
-					<div class="projectdetails">
-						<label class="projectitle">SchoolCompanion</label><br><br>
-						<label class="yr">2018</label><br>
-						<label class="stack">Flutter + Flask(Python)</label>
-						<br><br><br>
-						<p class="desc">A Complete Platform for Schools, Colleges, Universities that allows them to provide notes, attendance info, results, Sample Papers, Circulars and more!</p>
-					</div>
-				</div>
-				<div class="project rtr" onclick="gotoProject('Metalloid');">
-					<div class="ximage"><center><img src="Images/flutter.png" alt="" srcset=""></center></div>
-					<div class="projectdetails">
-						<label class="projectitle">Metalloid</label><small class="yr"> (UI)</small><br><br>
-						<label class="yr">2018</label><br>
-						<label class="stack">Flutter + Flask(Python)</label>
-						<br><br><br>
-						<p class="desc">An online community for Metalheads! Get into Group Chats, Learn about your Favourite bands, play quizzes, run polls and a whole lot more! </p>
-					</div>
-				</div>
-
+			<div class="projectviewer" id="projectviewer">
 			</div>
 		</div>
 		<br><br>
 		<div class="personalprojects" >
 			<h1 class="heading">🔥 Personal Projects <span class="sw">(swipe)</span</h1>
 			<br />
-			<div class="projectviewer">
-				<div class="project ltr" onclick="gotoPersonalProject('FaceSwapApp');">
-					<div class="ximage"><center><img src="Images/ml.png" alt="" srcset=""></center></div>
-					<div class="projectdetails">
-						<label class="projectitle">FaceSwap App</label><br><br>
-						<label class="yr">2019-2020</label><br>
-						<label class="stack">Python</label>
-						<br><br><br>
-						<p class="desc">An Application that allows you to Swap your face with another face over the web! It uses Python to conduct a bit of ML Magic and then uses Flask to host itself.</p>
-					</div>
-				</div>
-				<div class="project" onclick="gotoPersonalProject('TasksApp');">
-					<div class="ximage"><center><img src="Images/js.png" alt="" srcset=""></center></div>
-					<div class="projectdetails">
-						<label class="projectitle">Tasks App</label><br><br>
-						<label class="yr">2020</label><br>
-						<label class="stack">Vanilla JavaScript</label>
-						<br><br><br>
-						<p class="desc">A JavaScript WebApp
-							 that provides Google Tasks esque functionality with a beautiful and feature-rich User Interface</p>
-					</div>
-				</div>
-				<div class="project" onclick="gotoPersonalProject('TextDifferenceFinder');">
-					<div class="ximage"><center><img src="Images/js.png" alt="" srcset=""></center></div>
-					<div class="projectdetails">
-						<label class="projectitle">Text Difference Finder</label><br><br>
-						<label class="yr">2020</label><br>
-						<label class="stack">Vanilla JavaScript</label>
-						<br><br><br>
-						<p class="desc">Finds the Differences betweenn 2 blocks of text and highlights them beautifully!</p>
-					</div>
-				</div>
-				<div class="project" onclick="gotoPersonalProject('URLShortener');">
-					<div class="ximage"><center><img src="Images/python.png" alt="" srcset=""></center></div>
-					<div class="projectdetails">
-						<label class="projectitle">Flask URL Shortener</label><br><br>
-						<label class="yr">2020</label><br>
-						<label class="stack">Flask(Python) + JavaScript</label>
-						<br><br><br>
-						<p class="desc">This Web App takes a long link and retuns a shortened and minified link thats easier to share!!</p>
-					</div>
-				</div>
-				<div class="project rtr" onclick="gotoPersonalProject('JSYoutubeDownloader');">
-					<div class="ximage"><center><img src="Images/js.png" alt="" srcset=""></center></div>
-					<div class="projectdetails">
-						<label class="projectitle">JS Youtube Downloader</label><br><br>
-						<label class="yr">2020</label><br>
-						<label class="stack">Vanilla JavaScript + NodeJS</label>
-						<br><br><br>
-						<p class="desc">This App helps you download Youtube videos as MP4 files and also has a beautiful UI!</p>
-					</div>
-				</div>
+			<div class="projectviewer" id="perprojviewer">
 				<div class="spcr"></div>
 			</div>
 		</div>
@@ -319,17 +102,8 @@
 		<div class="More">
 			<h1 class="heading">👀 Other Works </h1>
 			<br />
-			<div class="projectviewer">
-				<div class="project ltr" onclick="gotoWorks('MLBlog');">
-					<div class="ximage"><center><img src="Images/ml.png" alt="" srcset=""></center></div>
-					<div class="projectdetails">
-						<label class="projectitle">Machine Learning Blog</label><br><br>
-						<label class="yr">2018</label><br>
-						<label class="stack">Wordpress Blog</label>
-						<br><br><br>
-						<p class="desc">This is a Blog Post series about Basic Machine Learning! Check it out!</p>
-					</div>
-				</div>
+			<div class="projectviewer" id="otherworksviewer">
+
 			</div>
 		</div>
 
@@ -341,44 +115,7 @@
 			<h1 class="heading">🤙 Contact Me</h1>
 			<h5 class="gm">(manashejmadi@gmail.com)</h5>
 			<br />
-			<div class="contactbar">
-				<img
-				  src="Images/instagram.png"
-				  alt=""
-				  class="contactIcon"
-				  onclick="handleContactClick('Instagram');"
-				/>
-				<img
-				  src="Images/linkedin.png"
-				  alt=""
-				  class="contactIcon"
-				  onclick="handleContactClick('LinkedIn');"
-				/>
-				<img
-				  src="Images/github.png"
-				  alt=""
-				  class="contactIcon"
-				  onclick="handleContactClick('Github');"
-				/>
-				<img
-				  src="Images/gmail.png"
-				  alt=""
-				  class="contactIcon"
-				  onclick="handleContactClick('Gmail');"
-				/>
-				<img
-				  src="Images/facebook.png"
-				  alt=""
-				  class="contactIcon"
-				  onclick="handleContactClick('Facebook');"
-				/>
-				<img
-				  src="Images/twitter.png"
-				  alt=""
-				  class="contactIcon"
-				  onclick="handleContactClick('Twitter');"
-				/>
-			  </div>
+			<div class="contactbar" id="cBar2"></div>
 		</div>
       </div>
 
@@ -394,6 +131,7 @@
 		 
 	  </footer>
 	</main>
+	<script src="data.js"></script>
 	<script src="app.js"></script>
   </body>
 </html>
