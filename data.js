@@ -10,7 +10,8 @@ Programming, Webdev, Mobile Development, Desktop Development and more!
 I Specialize in App making and have made numerous apps over the years!
 I also have the skill to formulate good ideas and translate it to
 Functional Code! I’m mostly a solo developer but I can also work and
-coordinate tasks extemely well when i’m in a Team! Hit me up! Lets
+coordinate tasks extemely well when i’m in a Team! I'm also an avid 
+Space Travel fan! Especially of the SpaceX Starship Project. Hit me up! Lets
 talk soon!`;
 
 
