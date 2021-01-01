@@ -85,12 +85,18 @@ const getData = (src, key) => {
 
 //Handles the Redirecting to Contact sources
 const handleContactClick = (name) => {
-	window.open(social_links[name], '_blank').focus();
+	if(name==="Gmail"){
+		var x = document.getElementById("snackbar");
+  		x.className = "show";
+  		setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+	}else{
+		window.open(social_links[name], '_blank').focus();
+	}
 }
 
 //Handles the Work With Me Button
 const workWithMe = () => {
-	window.open(social["Gmail"], '_blank').focus();
+	window.open("https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=manashejmadi@gmail.com", '_blank').focus();
 }
 
 //Scrolls to different sections in the WebPage

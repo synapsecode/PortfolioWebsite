@@ -19,7 +19,7 @@ let social_links = {
 	Instagram: "https://www.instagram.com/synapse.code/",
 	LinkedIn: "https://www.linkedin.com/in/manas-hejmadi-0b3920183/",
 	Github: "https://github.com/synapsecode",
-	Gmail: "https://mail.google.com/mail/?view=cm&fs=1&to=manashejmadi@gmail.com",
+	Gmail: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=manashejmadi@gmail.com",
 	Facebook: "https://www.facebook.com/synapse.code",
 	Twitter: "https://twitter.com/synapse_code",
 }
