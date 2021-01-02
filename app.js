@@ -12,9 +12,9 @@ let langscr = document.getElementById("lngf");
 let skillscr = document.getElementById("sk");
 
 
-const generateProject = (p) => {
+const generateProject = (p, isWorks=false) => {
 	return `
-	<div class="project ltr" onclick="gotoProject('${p.Name}');">
+	<div class="project ltr" onclick="${isWorks ? 'gotoWorks' : 'gotoProject'}('${p.Name}');">
 		<div class="ximage"><center><img src="${p.imageSrc}" alt="" srcset=""></center></div>
 		<div class="projectdetails">
 			<label class="projectitle">${p.Name}</label><small class="yr"> </small><br><br>
@@ -65,7 +65,7 @@ PERPROJDATA.forEach((e)=>{
 	perProjViewer.innerHTML += generateProject(e);
 });
 OTHERDATA.forEach((e)=>{
-	otherViewer.innerHTML += generateProject(e);
+	otherViewer.innerHTML += generateProject(e, isWorks=true);
 });
 
 lnf.forEach((e)=> langscr.innerHTML += generateLangOrSkill(e, isSkill=false))
@@ -116,6 +116,9 @@ const gotoProject = (name) => {
 }
 
 const gotoWorks = (name) => {
+	print(name)
+	if(name == 'Machine Learning Blog')
+		name = 'MLBlog'
 	window.open(other_works_links[name], '_blank').focus();
 }
 
