@@ -113,7 +113,7 @@ let other_works_links = {
 }
 
 let other_works_desc = {
-	MLBLog: "This is a Blog Post series about Basic Machine Learning! Check it out!"
+	MLBlog: "This is a Blog Post series about Basic Machine Learning! Check it out!"
 }
 
 //============================================OTHER WORKS============================================
@@ -123,6 +123,7 @@ let other_works_desc = {
 
 let PROJDATA = [
 	{
+		displayName: "FlutterGym",
 		Name: "FlutterGym",
 		description: project_desc.FlutterGym,
 		year: 2020,
@@ -131,7 +132,8 @@ let PROJDATA = [
 		link:proj_links.FlutterGym,
 	},
 	{
-		Name: "MicroBlogger",
+		displayName: "Microblogger",
+		Name: "Microblogger",
 		description: project_desc.Microblogger,
 		year: 2020,
 		TechStack:"Flutter + Flask(Python)",
@@ -139,6 +141,7 @@ let PROJDATA = [
 		link:proj_links.Microblogger,
 	},
 	{
+		displayName: "VoteFlow",
 		Name: "VoteFlow",
 		description: project_desc.VoteFlow,
 		year: 2019,
@@ -147,6 +150,7 @@ let PROJDATA = [
 		link:proj_links.VoteFlow,
 	},
 	{
+		displayName: "School Companion",
 		Name: "SchoolCompanion",
 		description: project_desc.SchoolCompanion,
 		year: 2019,
@@ -155,6 +159,7 @@ let PROJDATA = [
 		link:proj_links.SchoolCompanion,
 	},
 	{
+		displayName: "Metalloid",
 		Name: "Metalloid",
 		description: project_desc.Metalloid,
 		year: 2019,
@@ -163,6 +168,7 @@ let PROJDATA = [
 		link:proj_links.Metalloid,
 	},
 	{
+		displayName: "Dendrite",
 		Name: "Dendrite",
 		description: project_desc.Dendrite,
 		year: 2018,
@@ -175,6 +181,7 @@ let PROJDATA = [
 
 let PERPROJDATA = [
 	{
+		displayName: "FaceSwapApp",
 		Name: "FaceSwapApp",
 		description: personal_proj_desc.FaceSwapApp,
 		year: 2020,
@@ -183,6 +190,7 @@ let PERPROJDATA = [
 		link:perproj_links.FaceSwapApp,
 	},
 	{
+		displayName: "TasksApp",
 		Name: "TasksApp",
 		description: personal_proj_desc.TasksApp,
 		year: 2020,
@@ -191,7 +199,8 @@ let PERPROJDATA = [
 		link:perproj_links.TasksApp,
 	},
 	{
-		Name: "Text\nDifferenceFinder",
+		displayName: "Text\nDifference Finder",
+		Name: "TextDifferenceFinder",
 		description: personal_proj_desc.TextDifferenceFinder,
 		year: 2020,
 		TechStack:"Vanilla JavaScript",
@@ -199,7 +208,8 @@ let PERPROJDATA = [
 		link:perproj_links.TextDifferenceFinder,
 	},
 	{
-		Name: "JSYoutube\nDownloader",
+		displayName: "JS Youtube\nDownloader",
+		Name: "JSYoutubeDownloader",
 		description: personal_proj_desc.JSYoutubeDownloader,
 		year: 2020,
 		TechStack:"Vanilla JavaScript",
@@ -207,7 +217,8 @@ let PERPROJDATA = [
 		link:perproj_links.JSYoutubeDownloader,
 	},
 	{
-		Name: "Flask\nURLShortener",
+		displayName: "Flask\nURLShortener",
+		Name: "URLShortener",
 		description: personal_proj_desc.URLShortener,
 		year: 2020,
 		TechStack:"Flask(Python)",
@@ -215,7 +226,8 @@ let PERPROJDATA = [
 		link:perproj_links.URLShortener,
 	},
 	{
-		Name: "FlaskBlueprints\nCreation Tool",
+		displayName: "FlaskBlueprints\nCreation Tool",
+		Name: "FlaskBlueprintTool",
 		description: personal_proj_desc.FlaskBlueprintTool,
 		year: 2020,
 		TechStack:"Python",
@@ -223,6 +235,7 @@ let PERPROJDATA = [
 		link:perproj_links.FlaskBlueprintTool,
 	},
 	{
+		displayName: "HyperRename",
 		Name: "HyperRename",
 		description: personal_proj_desc.HyperRename,
 		year: 2020,
@@ -231,6 +244,7 @@ let PERPROJDATA = [
 		link:perproj_links.HyperRename,
 	},
 	{
+		displayName: "Python Password\nManager",
 		Name: "PyPassManager",
 		description: personal_proj_desc.PyPassManager,
 		year: 2020,
@@ -243,8 +257,9 @@ let PERPROJDATA = [
 
 let OTHERDATA = [
 	{
-		Name: "Machine Learning Blog",
-		description: other_works_desc.MLBLog,
+		displayName: "Machine Learning\nBlog",
+		Name: "MLBlog",
+		description: other_works_desc.MLBlog,
 		year: 2018,
 		TechStack:"Wordpress Blog",
 		imageSrc:"Images/ml.png",

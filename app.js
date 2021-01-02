@@ -12,12 +12,29 @@ let langscr = document.getElementById("lngf");
 let skillscr = document.getElementById("sk");
 
 
-const generateProject = (p, isWorks=false) => {
+const generateProject = (p, isPerProj=false) => {
 	return `
-	<div class="project ltr" onclick="${isWorks ? 'gotoWorks' : 'gotoProject'}('${p.Name}');">
+	<div class="project ltr" onclick="${isPerProj ? 'gotoPersonalProject' : 'gotoProject'}('${p.Name}');">
 		<div class="ximage"><center><img src="${p.imageSrc}" alt="" srcset=""></center></div>
 		<div class="projectdetails">
-			<label class="projectitle">${p.Name}</label><small class="yr"> </small><br><br>
+			<label class="projectitle">${p.displayName}</label><small class="yr"> </small><br><br>
+			<label class="yr">${p.year}</label><br>
+			<label class="stack">${p.TechStack}</label>
+			<br><br><br>
+			<p class="desc">
+				${p.description}
+			</p>
+		</div>
+	</div>
+	`
+}
+
+const generateWorks = (p) => {
+	return `
+	<div class="project ltr" onclick="gotoWorks('${p.Name}');">
+		<div class="ximage"><center><img src="${p.imageSrc}" alt="" srcset=""></center></div>
+		<div class="projectdetails">
+			<label class="projectitle">${p.displayName}</label><small class="yr"> </small><br><br>
 			<label class="yr">${p.year}</label><br>
 			<label class="stack">${p.TechStack}</label>
 			<br><br><br>
@@ -62,10 +79,10 @@ PROJDATA.forEach((e)=>{
 	projViewer.innerHTML += generateProject(e);
 });
 PERPROJDATA.forEach((e)=>{
-	perProjViewer.innerHTML += generateProject(e);
+	perProjViewer.innerHTML += generateProject(e, isPerProj=true);
 });
 OTHERDATA.forEach((e)=>{
-	otherViewer.innerHTML += generateProject(e, isWorks=true);
+	otherViewer.innerHTML += generateWorks(e);
 });
 
 lnf.forEach((e)=> langscr.innerHTML += generateLangOrSkill(e, isSkill=false))
@@ -96,7 +113,7 @@ const handleContactClick = (name) => {
 
 //Handles the Work With Me Button
 const workWithMe = () => {
-	window.open("https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=manashejmadi@gmail.com", '_blank').focus();
+	window.open("mailto:manashejmadi@gmail.com", '_blank').focus();
 }
 
 //Scrolls to different sections in the WebPage
@@ -112,17 +129,17 @@ const goto = (name) => {
 }
 
 const gotoProject = (name) => {
+	console.log("Project", name, proj_links[name]);
 	window.open(proj_links[name], '_blank').focus();
 }
 
 const gotoWorks = (name) => {
-	print(name)
-	if(name == 'Machine Learning Blog')
-		name = 'MLBlog'
+	console.log("Works", name, other_works_links[name]);
 	window.open(other_works_links[name], '_blank').focus();
 }
 
 const gotoPersonalProject = (name) => {
+	console.log("PerProj", name, perproj_links[name]);
 	window.open(perproj_links[name], '_blank').focus();
 }
 
