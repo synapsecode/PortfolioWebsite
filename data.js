@@ -63,6 +63,7 @@ let social = [
 //============================================MAIN PROJECTS============================================
 
 let proj_links = {
+	Covaxinator:'https://github.com/synapsecode/Covaxinator',
 	FlutterGym:"https://github.com/synapsecode/FlutterGym",
 	Microblogger: "https://github.com/synapsecode/Microblogger",
 	VoteFlow: "https://github.com/synapsecode/VoteFlow",
@@ -72,6 +73,7 @@ let proj_links = {
 }
 
 let project_desc = {
+	Covaxinator:'Covaxinator is a Vaccine Administration and Tracking Platform built in Flask for the Oakridge Codefest 2021 Hackathon',
 	FlutterGym:"A Complete Online Gym and Training Platform coupled with a inbuilt Store for Apparel, Suppliments, Equipments and support for meditation, articles, etc",
 	Microblogger:"An Indian Flutter Based Microblogging platfom that provides a new way to socialize withyour peers!",
 	VoteFlow:"A Complete Voting Platform for Schools, Colleges, Universities. Communities and Small Businesses with a really simple and easy to use UI all built using Flask!",
@@ -122,6 +124,15 @@ let other_works_desc = {
 //============================================AGGREGATION============================================
 
 let PROJDATA = [
+	{
+		displayName: "Covaxinator",
+		Name: "Covaxinator",
+		description: project_desc.Covaxinator,
+		year: 2021,
+		TechStack:"Flask(Python)",
+		imageSrc:"Images/python.png",
+		link:proj_links.Covaxinator,
+	},
 	{
 		displayName: "FlutterGym",
 		Name: "FlutterGym",
