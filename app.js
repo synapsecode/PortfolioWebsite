@@ -7,6 +7,7 @@ let cBar2 = document.getElementById("cBar2");
 let projViewer = document.getElementById("projectviewer");
 let perProjViewer = document.getElementById("perprojviewer");
 let otherViewer = document.getElementById("otherworksviewer");
+let testimonialViewer = document.getElementById('testimonialviewer')
 
 let langscr = document.getElementById("lngf");
 let skillscr = document.getElementById("sk");
@@ -67,6 +68,20 @@ const generateLangOrSkill = (e, isSkill=false) => {
 	`;
 }
 
+const generateTestimonial = (e) => {
+	return `
+	<div class="testimonial" onclick="">
+		<div class="spacer"></div>
+		<div class="projectdetails">
+			<label class="projectitle">${e.name}</label><br><br>
+			<p class="desc">
+				${e.testimonial}
+			</p>
+		</div>
+	</div>
+	`;
+}
+
 bio.innerHTML = aboutme
 social.forEach((e) => {
 	if(social.slice(0,social.length-2).includes(e))
@@ -84,6 +99,9 @@ PERPROJDATA.forEach((e)=>{
 OTHERDATA.forEach((e)=>{
 	otherViewer.innerHTML += generateWorks(e);
 });
+testimonial_data.forEach((e) => {
+	testimonialViewer.innerHTML += generateTestimonial(e)
+})
 
 lnf.forEach((e)=> langscr.innerHTML += generateLangOrSkill(e, isSkill=false))
 skillandtech.forEach((e)=> skillscr.innerHTML += generateLangOrSkill(e, isSkill=true))
@@ -142,7 +160,6 @@ const gotoPersonalProject = (name) => {
 	console.log("PerProj", name, perproj_links[name]);
 	window.open(perproj_links[name], '_blank').focus();
 }
-
 
 //Prevents Navbar from Disappearing on InPage Redirect
 var shiftWindow = function() { scrollBy(0, -70) };

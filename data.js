@@ -70,6 +70,7 @@ let proj_links = {
 	SchoolCompanion: "https://github.com/synapsecode/SchoolCompanion-App",
 	Metalloid: "https://github.com/synapsecode/Metalloid",
 	Dendrite:"https://github.com/synapsecode/Dendrite-1.1",
+	BusManager: "https://github.com/synapsecode/BusManagerBackend"
 }
 
 let project_desc = {
@@ -79,7 +80,8 @@ let project_desc = {
 	VoteFlow:"A Complete Voting Platform for Schools, Colleges, Universities. Communities and Small Businesses with a really simple and easy to use UI all built using Flask!",
 	SchoolCompanion:"A Complete Platform for Schools, Colleges, Universities that allows them to provide notes, attendance info, results, Sample Papers, Circulars and more!",
 	Metalloid:"An online community for Metalheads! Get into Group Chats, Learn about your Favourite bands, play quizzes, run polls and a whole lot more!",
-	Dendrite:"Dendrite is a simple solution to achieve BlockChain-Supply Chain Integration and promote transparency for small scale companies"
+	Dendrite:"Dendrite is a simple solution to achieve BlockChain-Supply Chain Integration and promote transparency for small scale companies",
+	BusManager: "BusManager is a complete and Robust Server Side Backend Solution to manage School Buses and was built using Flask and Python. It was a client project."
 }
 
 //============================================MAIN PROJECTS============================================
@@ -150,6 +152,15 @@ let PROJDATA = [
 		TechStack:"Flutter + Flask(Python)",
 		imageSrc:"Images/flutter.png",
 		link:proj_links.Microblogger,
+	},
+	{
+		displayName: "BusManager",
+		Name: "BusManager",
+		description: project_desc.BusManager,
+		year: 2020,
+		TechStack:"Flask(Python)",
+		imageSrc:"Images/python.png",
+		link:proj_links.BusManager,
 	},
 	{
 		displayName: "VoteFlow",
@@ -336,5 +347,11 @@ let skillandtech = [
 	},
 ];
 
+let testimonial_data = [
+	{
+		name: 'Ismail Abdirahman',
+		testimonial: ' Manas was pleasure to work with! He is so kind and truly awesome at what he does. He delivered a product that I was pleased with. He made sure to communicate his progress and kept me informed throughout this process. He was so helpful in making any changes that I asked. He was also very helpful in explaining things that I had questions about, He is very timely and always exceeded my expectations. He built the Backend very professionally and will definitely be using his services again as well as recommending him to all of my family and friends.'
+	},
+]
 //============================================AGGREGATION============================================
 
