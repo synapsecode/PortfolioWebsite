@@ -157,7 +157,7 @@ let PROJDATA = [
 		displayName: "BusManager",
 		Name: "BusManager",
 		description: project_desc.BusManager,
-		year: 2020,
+		year: 2021,
 		TechStack:"Flask(Python)",
 		imageSrc:"Images/python.png",
 		link:proj_links.BusManager,
